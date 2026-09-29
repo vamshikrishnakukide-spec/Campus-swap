@@ -1,27 +1,73 @@
-# CampusSwap — Frontend Only
+# CampusSwap
 
-This version is the backend-free conversion of CampusSwap. It preserves the major pages and UI while replacing Express/SQLite/session APIs with browser JavaScript + localStorage.
+CampusSwap is a student-focused marketplace website designed to help
+college students buy, sell, exchange, and discover useful items within
+their campus community.
 
-## Run
-1. Extract the ZIP.
-2. Open `index.html` in Chrome/Edge.
-3. No Node.js, npm, Express or SQLite is required.
+## Features
 
-## Demo login
-`aarav@cmr.edu` / `student123`
+- Product browsing and search
+- Category and price filtering
+- Textbooks
+- Calculators
+- Lab Equipment
+- Electronics
+- Bikes
+- Furniture
+- College Accessories
+- Product details
+- Wishlist
+- Seller profiles
+- Chat
+- Sell an Item
+- Mark items as sold
+- Responsive user interface
 
-## Included
-- 700 seeded demo listings (100 per category)
-- 7 categories
-- Search, filters and free-only filter
-- Product details and related listings
-- Local login/register
-- Local wishlist
-- Local sell-item flow with compressed image upload
-- Local dashboard and sold/available status
-- Local profiles
-- Local chat and built-in CampusSwap AI helper
-- Real photographic image URLs; no SVG/mock product graphics
+## Technology
 
-## Frontend-only limitations
-There is no central server/database. Accounts, listings, wishlist and messages are stored only in the current browser's localStorage. Chat is local/demo and does not send messages to another device. Clearing browser storage resets the demo data. Remote product photos require internet access.
+- HTML
+- CSS
+- JavaScript
+- LocalStorage
+
+## Project Structure
+
+- `public/css/` – Website styling
+- `public/js/` – JavaScript functionality
+- `public/images/` – Product images
+- HTML files – Website pages
+
+## How to Run
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+
+No Node.js, npm, Express, or database is required because this is
+a frontend-only project.
+
+#structure
+
+
+Campus-swap/
+│
+├── index.html
+├── browse.html
+├── listing.html
+├── login.html
+├── register.html
+├── sell.html
+├── wishlist.html
+├── chat.html
+├── dashboard.html
+├── profile.html
+│
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   └── js/
+│       ├── app.js
+│       └── image-catalog.js
+│
+└── README.md
